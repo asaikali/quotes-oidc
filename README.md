@@ -1,7 +1,6 @@
 # quotes
 
-This application shows to use spring boot to build a self contained web application.
-The application shows how to do the following.
+This application shows to use spring boot to build a self contained web application using.
 
 * Flyway 
 * Spring Data JPA
@@ -9,7 +8,7 @@ The application shows how to do the following.
 
 # DevTools
 
-## DevTools + IntelliJ 
+## DevTools + IntelliJ
 
 DevTools monitors the classpath only therefore you must rebuild an intelliJ project
 before DevTools can pick up the changes. Use `Project > Build` to trigger a build.
@@ -31,17 +30,16 @@ Direct from the SpringBoot docs
 >This approach means that application restarts are typically much faster 
 >than “cold starts”, since the base classloader is already available and populated.
 
-## LiveReload 
+## LiveReload
 
-LiveReload is a browser extension that will automatically refresh a WebPage 
+LiveReload is a browser extension that will automatically refresh a WebPage
 when it is edited and saved. The LiveReload browser extension is required
-for this to work. Check the [SpringBoot docs](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html#using-boot-devtools-livereload) 
-for details.
+for this to work. Check the [SpringBoot docs](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html#using-boot-devtools-livereload) for details.
 
 ## DevTools and the H2 console
 
-If H2 in memory database is being used and DevTools is on the classpath then 
-SpringBoot will automatically configure the H2 web Console. You can visit the 
+If H2 in memory database is being used and DevTools is on the classpath then
+SpringBoot will automatically configure the H2 web Console. You can visit the
 console to interact with the database. The console is at http://localhost:8080/h2-console
 once you are at the console use database name `jdbc:h2:mem:testdb` which is what is printed
 by SpringBoot as the database URL
