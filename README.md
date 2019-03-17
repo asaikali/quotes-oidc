@@ -1,11 +1,28 @@
-# quotes
+# quotes-oidc
 
-This application shows to use spring boot to build a self contained web application using.
+This application shows to use spring boot to build a self contained web application 
+that is secured using OAuth2 / OpenId Connect. It leverages the following frameworks
 
 * Flyway 
 * Spring Data JPA
 * Spring Security
 * SpringBoot [DevTools](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html)
+
+# Required JDK 
+
+**This demo only works on Java 8** due to incompatibility between some some third party libraries 
+and Java 11. 
+
+# Run The UAA and the app 
+
+The application requires an OpenId Connect provider, the demo leverages the UAA from CloudFoundry. 
+Use the command `./mvnw cargo:run -Puaa` to launch the UAA and wait until it fully started might take
+around 20 seconds. The `uaa.yml` file contains the configuration we have hardcoded a single user 
+called `user` with password `password` the UAA runs on `http://localhost:8090` 
+
+After the UAA launches run the spring boot app and visit it at `http://localhost:8080` you will be 
+redirected to the UAA and can login after which you will be redirected back to the application. 
+
 
 # DevTools
 
