@@ -4,6 +4,7 @@ This application shows to use spring boot to build a self contained web applicat
 
 * Flyway 
 * Spring Data JPA
+* Spring Security
 * SpringBoot [DevTools](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html)
 
 # DevTools
