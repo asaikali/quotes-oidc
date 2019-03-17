@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
-    <title>Billboard</title>
+    <title>Quotes</title>
     <script src="/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -34,4 +35,8 @@
         window.setInterval(getMessage, 2000);
     });
 </script>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
 </html>
