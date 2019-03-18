@@ -6,7 +6,7 @@ logging:
     root: INFO
     org.springframework.web: INFO
     org.springframework.security: INFO
-    org.springframework.security.oauth2: INFO
+    org.springframework.security.oauth2: DEBUG
 #    org.springframework.boot.autoconfigure: DEBUG
 
 spring:
@@ -24,7 +24,7 @@ spring:
             client-secret: secret
             authorization-grant-type: authorization_code
             redirect-uri-template: "{baseUrl}/login/oauth2/code/{registrationId}"
-            scope: openid,profile,email
+            scope: openid,profile
         provider:
           uaa:
             authorization-uri: http://localhost:8090/uaa/oauth/authorize
