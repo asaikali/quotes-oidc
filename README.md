@@ -13,6 +13,11 @@ that is secured using OAuth2 / OpenId Connect. It leverages the following framew
 **This demo only works on Java 8** due to incompatibility between some some third party libraries 
 and Java 11. 
 
+# Building the code 
+
+You will need to activate the `dev` profile when building the app otherwise the spring test will
+fail you can do so by running  ` ./mvnw clean package -Dspring.profiles.active=dev`
+
 # Run The UAA and the app 
 
 The application requires an OpenId Connect provider, the demo leverages the UAA from CloudFoundry. 

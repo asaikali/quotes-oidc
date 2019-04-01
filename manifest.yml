@@ -1,18 +1,8 @@
 ---
 applications:
-  - name: quotes
+  - name: quotes-oidc
     memory: 1GB
     path: target/quotes-0.0.1-SNAPSHOT.jar
-    random-route: true
-    services:
-      - sso-service
-    env:
-      SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_UAA_authorization-uri: "https://canada.login.run.pivotal.io/oauth/authorize"
-      SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_UAA_token-uri: "https://canada.login.run.pivotal.io/oauth/token"
-      SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_UAA_user-info-uri: "https://canada.login.run.pivotal.io/userinfo"
-      SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_UAA_jwk-set-uri: "https://canada.login.run.pivotal.io/token_keys"
-      SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_UAA_user-name-attribute: "user_name"
-      SPRING_SECURITY_OAUTH2_CLIENT_registration_quotes_client-id: "02254f21-733b-44d3-b461-cb8e41621f34"
-      SPRING_SECURITY_OAUTH2_CLIENT_registration_quotes_client-secret: "affc97a9-4678-4408-a566-894061f01ce3"
-      # SPRING_SECURITY_OAUTH2_CLIENT_registration_quotes_redirect-uri-template: "affc97a9-4678-4408-a566-894061f01ce3"
-
+    instances: 0
+    routes:
+     - route: adib-quotes.cfapps.io

@@ -1,0 +1,12 @@
+{
+  "grant_types":[
+    "authorization_code"
+  ],
+  "scopes":[
+    "openid",
+    "profile"
+  ],
+  "redirect_uris":[
+    "https://adib-quotes.cfapps.io.cfapps.io/login/oauth2/code/pcf-sso"
+  ]
+}

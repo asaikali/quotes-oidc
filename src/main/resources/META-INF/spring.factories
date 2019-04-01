@@ -1,0 +1,2 @@
+io.pivotal.cfenv.spring.boot.CfEnvProcessor=\
+  com.example.quotes.OAuth2LoginSsoServiceCfEnvProcessor

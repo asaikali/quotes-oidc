@@ -51,7 +51,11 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>io.pivotal.cfenv</groupId>
+            <artifactId>java-cfenv-boot</artifactId>
+            <version>1.0.1.RELEASE</version>
+        </dependency>
         <!-- Test scoped dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
